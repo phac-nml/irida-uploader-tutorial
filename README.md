@@ -85,17 +85,17 @@ You can see more indepth information on uploading your own data in the Documenti
 
 If you try to open a directory with a broken sample sheet file, the uploader will show you an error like this
 
-![](broken_sample_sheet.png)
+![](images/broken_sample_sheet.png)
 
 From reading the error message, we can see that the `[Data]` header that we expected is not there. Lets open the Sample Sheet file to take a closer look.
 
-![](broken_sample_sheet_file.png)
+![](images/broken_sample_sheet_file.png)
 
 It looks like `[Data]` somehow got changed to `[Dataa]`, lets change it back, save the file, and click refresh in the uploader.
 
-![](broken_sample_sheet_refresh_button.png)
+![](images/broken_sample_sheet_refresh_button.png)
 
-![](broken_sample_sheet_fixed_sample_sheet.png)
+![](images/broken_sample_sheet_fixed_sample_sheet.png)
 
 Now everything looks good to go.
 
@@ -103,25 +103,25 @@ Now everything looks good to go.
 
 If a sample file gets renamed, or the sample sheet is edited, the sample sheet may throw an error.
 
-![](wrong_sample_name.png)
+![](images/wrong_sample_name.png)
 
 Let's take a look at the sample sheet and file directory
 
 The sample sheet file is called `SampleSheet.csv` for our Miseq run:
 
-![](wrong_sample_name_sample_sheet.png)
+![](images/wrong_sample_name_sample_sheet.png)
 
 The Miseq data is found in the `Data\Intensities\Basecalls` directory:
 
-![](wrong_sample_name_data_dir.png)
+![](images/wrong_sample_name_data_dir.png)
 
 It looks like our second sample `sample2_S1_L001_R1_001.fastq.gz` accidentally got renamed to `saample2` in our `SampleSheet.csv` file.
 
 Lets change it to `sample2`, save the file, and click the refresh button in the IRIDA Uploader
 
-![](wrong_sample_name_refresh_button.png)
+![](images/wrong_sample_name_refresh_button.png)
 
-![](wrong_sample_name_fixed_sample_sheet.png)
+![](images/wrong_sample_name_fixed_sample_sheet.png)
 
 Now everything looks good to go.
 
