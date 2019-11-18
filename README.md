@@ -83,6 +83,8 @@ You can see more indepth information on uploading your own data in the Documenti
 
 #### Incorrectly formatted Sample Sheet
 
+The sequencing run we are using for this tutorial is also included in this github repository under the directory name `incorrectly_formatted_sample_sheet`.
+
 If you try to open a directory with a broken sample sheet file, the uploader will show you an error like this
 
 ![](images/broken_sample_sheet.png)
