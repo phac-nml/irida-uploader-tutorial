@@ -4,6 +4,7 @@
 
 #### Sign into IRIDA
 
+TODO: figure out credentials
 
 #### Create a new IRIDA project
 
@@ -23,11 +24,11 @@ In our example above, the project number is 9
 
 #### Download and install the IRIDA Uploader
 
-
+TODO: waiting on 0.3.1 for download instructions
 
 #### Configure your Uploader
 
-
+TODO: figure out credentials for this
 
 #### Download data set
 
