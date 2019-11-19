@@ -9,15 +9,15 @@
 
 Now that you are logged in, create a new project by selecting `Projects` > `Create New Project`.
 
-!()[images/tutorial_create_new_project_button.png]
+![](images/tutorial_create_new_project_button.png)
 
 Give your Project a name, and then select `Create Project`.
 
-!()[images/tutorial_create_new_project_screen.png]
+![](images/tutorial_create_new_project_screen.png)
 
 Make note of what your project number is, as it will be used later on when uploading your data.
 
-!()[images/tutorial_creaded_project.png]
+![](images/tutorial_created_project.png)
 
 In our example above, the project number is 9
 
@@ -38,11 +38,11 @@ Unzip the data and locate the folder called `example_miseq_data`, this is sequen
 
 In the `example_miseq_data` directory, locate the file named `SampleSheet.csv`. This file is responsible for listing the sample files and what project they are going to be uploaded to.
 
-!()[images/tutorial_no_sample_project.png]
+![](images/tutorial_no_sample_project.png)
 
 Open the Sample Sheet file and find the empty `Sample_Project` column under the `[Data]` header. Edit this column such that every sample has the project number for the IRIDA project we created earlier.
 
-!()[images/tutorial_with_sample_project.png]
+![](images/tutorial_with_sample_project.png)
 
 In this case, our project number was 9. After editing the file make sure to save.
 
