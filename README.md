@@ -24,7 +24,10 @@ In our example above, the project number is 9
 #### Download and install the IRIDA Uploader
 
 
+
 #### Configure your Uploader
+
+
 
 #### Download data set
 
@@ -52,9 +55,40 @@ Make sure you keep the CSV file format if edit the file with Microsoft Excel or 
 
 #### Upload data
 
+Return to the IRIDA Uploader program, and select the `Open Run Directory` button.
+
+![](images/tutorial_select_open.png)
+
+Find and select the `example_miseq_data` directory again, and click `Open` while the directory is selected.
+
+![](images/tutorial_select_run.png)
+
+The uploader should now look like this. You can now click upload to start uploading.
+
+![](images/tutorial_run_loaded.png)
+
+Congratulations! You have successfully uploaded the sequencing run. You can also click the `Show Log` button for more information about your upload.
+
+![](images/tutorial_run_uploaded.png)
+
+Now that the run has been uploaded, two new files have been created in your sequencing run directory.
+
+`irida_uploader_status.info`: This contains useful reference information about your run. Please open this file and try to become familiar with it.
+
+It contains the following fields:
+* Date Time: The time of the upload.
+* IRIDA Instance: The URL of the IRIDA instance the data was uploaded to.
+* Message: If an error occurs while uploading, it appears here.
+* Run ID: The upload run number, this number can be used to reference the run if data needs to be deleted by an administrator
+* Upload Status: Indicates if the run was completed successfully, partially, or if an error occured
+
+`irida-uploader.log`: This contains a history of everything the uploaded did while uploading. This can be useful when solving problems that could occur when uploading.
 
 #### Verify data is in your IRIDA project
 
+Refresh the page for your IRIDA project and see that your data now exists.
+
+![](images/tutorial_project_with_samples.png)
 
 ## Uploading non-Illumina data
 
