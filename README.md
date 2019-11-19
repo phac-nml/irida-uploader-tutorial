@@ -7,6 +7,19 @@
 
 #### Create a new IRIDA project
 
+Now that you are logged in, create a new project by selecting `Projects` > `Create New Project`.
+
+!()[images/tutorial_create_new_project_button.png]
+
+Give your Project a name, and then select `Create Project`.
+
+!()[images/tutorial_create_new_project_screen.png]
+
+Make note of what your project number is, as it will be used later on when uploading your data.
+
+!()[images/tutorial_creaded_project.png]
+
+In our example above, the project number is 9
 
 #### Download and install the IRIDA Uploader
 
@@ -15,11 +28,32 @@
 
 #### Download data set
 
+On this tutorial page, Click the `Clone or download` button and select `Download ZIP` to download the dataset.
+
+![](images/tutorial_download_data.png)
+
+Unzip the data and locate the folder called `example_miseq_data`, this is sequencing run we are going to upload.
 
 #### Edit your SampleSheet.csv file in the dataset
 
+In the `example_miseq_data` directory, locate the file named `SampleSheet.csv`. This file is responsible for listing the sample files and what project they are going to be uploaded to.
+
+!()[images/tutorial_no_sample_project.png]
+
+Open the Sample Sheet file and find the empty `Sample_Project` column under the `[Data]` header. Edit this column such that every sample has the project number for the IRIDA project we created earlier.
+
+!()[images/tutorial_with_sample_project.png]
+
+In this case, our project number was 9. After editing the file make sure to save.
+
+Make sure you keep the CSV file format if edit the file with Microsoft Excel or other spreadsheet software.
+
+![](images/save_as_csv.png)
 
 #### Upload data
+
+
+#### Verify data is in your IRIDA project
 
 
 ## Uploading non-Illumina data
@@ -81,7 +115,7 @@ You can see more indepth information on uploading your own data in the Documenti
 
 ## Common Errors
 
-#### Incorrectly formatted Sample Sheet
+### Incorrectly formatted Sample Sheet
 
 The sequencing run we are using for this tutorial is also included in this github repository under the directory name `incorrectly_formatted_sample_sheet`.
 
@@ -101,7 +135,7 @@ It looks like `[Data]` somehow got changed to `[Dataa]`, lets change it back, sa
 
 Now everything looks good to go.
 
-#### Missing or incorrectly named sample files
+### Missing or incorrectly named sample files
 
 If a sample file gets renamed, or the sample sheet is edited, the sample sheet may throw an error.
 
@@ -133,5 +167,5 @@ __Note__: Other sequencers have their files in different locations, please refer
 * Miniseq: https://irida-uploader.readthedocs.io/en/stable/parsers/miniseq.html
 * Nextseq / Iseq: https://irida-uploader.readthedocs.io/en/stable/parsers/nextseq.html
 
-#### More Errors
+### More Errors
 Take a look through our documentation for more errors that could occur while trying to upload data: https://irida-uploader.readthedocs.io/en/stable/errors.html
