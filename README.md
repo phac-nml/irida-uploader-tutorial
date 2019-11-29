@@ -219,7 +219,126 @@ __Note__: Other sequencers have their files in different locations, please refer
 * Nextseq / Iseq: https://irida-uploader.readthedocs.io/en/stable/parsers/nextseq.html
 
 ### Partially uploaded run
-TODO
+Sometimes while uploaded, the unexpected can occur and cause the upload to stop.
+
+In this case some of your data is likely uploaded. To save time we can edit our sample sheet to include only the files that still need to be uploaded.
+
+As with any error or unexpected behaviour, the first thing you should do is take a look at the `irida_uploader_status.info` file in the run directory.
+
+```
+{
+    "Date Time": "2019-11-29 12:08",
+    "Message": null,
+    "Upload Status": "partial"
+}
+```
+
+As we can see, the status of the run is partial, meaning it is likely that some data uploaded before the error occured.
+
+Lets take a look at the irida-uploader.log file in the same directory to try to get a clearer picture.
+
+```
+...
+2019-11-29 12:08:26 INFO     Validating sequencing run
+2019-11-29 12:08:26 INFO     *** Parsing Done ***
+2019-11-29 12:08:26 INFO     *** Connecting to IRIDA ***
+2019-11-29 12:08:26 INFO     *** Connected ***
+2019-11-29 12:08:26 INFO     *** Verifying run (online validation) ***
+2019-11-29 12:08:26 INFO     Loading projects.
+2019-11-29 12:08:26 INFO     Getting samples from project '6'
+2019-11-29 12:08:26 INFO     Getting samples from project '6'
+2019-11-29 12:08:26 INFO     Getting samples from project '6'
+2019-11-29 12:08:26 INFO     *** Run Verified ***
+2019-11-29 12:08:26 INFO     *** Starting Upload ***
+2019-11-29 12:08:27 INFO     Sequencing run id '19' has been created for upload
+2019-11-29 12:08:27 INFO     Uploading to Sample 01-1111 on Project 6
+2019-11-29 12:08:28 INFO     Starting to send file /miseq_run/Data/Intensities/BaseCalls/01-1111_S1_L001_R1_001.fastq.gz
+2019-11-29 12:08:28 INFO     Finished sending file /miseq_run/Data/Intensities/BaseCalls/01-1111_S1_L001_R1_001.fastq.gz
+2019-11-29 12:08:28 INFO     Starting to send file /miseq_run/Data/Intensities/BaseCalls/01-1111_S1_L001_R2_001.fastq.gz
+2019-11-29 12:08:28 INFO     Finished sending file /miseq_run/Data/Intensities/BaseCalls/01-1111_S1_L001_R2_001.fastq.gz
+2019-11-29 12:08:28 INFO     Uploading to Sample 02-2222 on Project 6
+```
+
+We can see here that the sample named 01-1111 finished uploading, and the sample named 02-2222 was started but did not complete, and our sampled named 03-3333 never started.
+
+Lets confirm this by taking a look at our samples on IRIDA.
+
+![](images/partial_all_samples.png)
+
+Here we can see all 3 of our samples are on our project, but we need to look at them to see if the data is there.
+
+![](images/partial_1.png)
+
+![](images/partial_2.png)
+
+![](images/partial_3.png)
+
+By looking at these we can see that only sample 01-1111 has the data uploaded to it.
+
+Lets edit our sample sheet to match what data still needs to be uploaded.
+
+First make a copy your sample sheet to make sure you have a backup of the original samplesheet for reference.
+
+```
+[Header]
+IEMFileVersion,4
+Investigator Name,Some Guy
+Experiment Name,1
+Date,10/15/2013
+Workflow,GenerateFASTQ
+Application,FASTQ Only
+Assay,Nextera XT
+Description,Superbug
+Chemistry,Amplicon
+
+[Reads]
+251
+250
+
+[Settings]
+ReverseComplement,0
+Adapter,AAAAGGGGAAAAGGGGAAA
+
+[Data]
+Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,I5_Index_ID,index2,Sample_Project,Description
+01-1111,01-1111,1,01,N01,AAAAAAAA,S01,TTTTTTTT,6,Super bug 
+02-2222,02-2222,2,02,N02,GGGGGGGG,S02,CCCCCCCC,6,Scary bug 
+03-3333,03-3333,3,03,N03,CCCCCCCC,S03,GGGGGGGG,6,Deadly bug
+```
+
+Now edit your sample sheet to remove the sample rows that have already been uploaded
+
+```
+[Header]
+IEMFileVersion,4
+Investigator Name,Some Guy
+Experiment Name,1
+Date,10/15/2013
+Workflow,GenerateFASTQ
+Application,FASTQ Only
+Assay,Nextera XT
+Description,Superbug
+Chemistry,Amplicon
+
+[Reads]
+251
+250
+
+[Settings]
+ReverseComplement,0
+Adapter,AAAAGGGGAAAAGGGGAAA
+
+[Data]
+Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,I5_Index_ID,index2,Sample_Project,Description
+02-2222,02-2222,2,02,N02,GGGGGGGG,S02,CCCCCCCC,6,Scary bug 
+03-3333,03-3333,3,03,N03,CCCCCCCC,S03,GGGGGGGG,6,Deadly bug
+```
+
+Open the sample directory in the IRIDA Uploader again, and you will be greated with a warning that the run was partially uploaded, this is what we expected, so hit continue.
+
+![](images/partial_warning.png)
+
+You can now upload the rest of your data.
 
 ### More Errors
 Take a look through our documentation for more errors that could occur while trying to upload data: https://irida-uploader.readthedocs.io/en/stable/errors.html
