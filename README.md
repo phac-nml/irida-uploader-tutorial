@@ -1,5 +1,21 @@
 # IRIDA Uploader Tutorial
 
+## Table of Contents
+
+[Uploading Data to a Project](#uploading-data-to-a-project)
+
+[Uploading non-Illumina data](#uploading-non-illumina-data)
+
+[Common Errors](#common-errors)
+
+[Incorrectly formatted Sample Sheet](#incorrectly-formatted-sample-sheet)
+
+[Mising or incorrectly named sample files](#missing-or-incorrectly-named-sample-files)
+
+[Partially uploaded run](#partially-uploaded-run)
+
+[More Errors](#more-errors)
+
 ## Uploading data to a project
 
 #### Sign into IRIDA
@@ -201,6 +217,9 @@ __Note__: Other sequencers have their files in different locations, please refer
 * Miseq: https://irida-uploader.readthedocs.io/en/stable/parsers/miseq.html
 * Miniseq: https://irida-uploader.readthedocs.io/en/stable/parsers/miniseq.html
 * Nextseq / Iseq: https://irida-uploader.readthedocs.io/en/stable/parsers/nextseq.html
+
+### Partially uploaded run
+TODO
 
 ### More Errors
 Take a look through our documentation for more errors that could occur while trying to upload data: https://irida-uploader.readthedocs.io/en/stable/errors.html
