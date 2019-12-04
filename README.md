@@ -52,33 +52,33 @@ https://github.com/phac-nml/irida-uploader/releases
 
 Once it's downloaded, launch the .exe file to open the installer.
 
-![](images/install1.png)
+![](images/install1.PNG)
 
 Click Next to continue.
 
-![](images/install2.png)
+![](images/install2.PNG)
 
 Select Install just for me and click Next
 
-![](images/install3.png)
+![](images/install3.PNG)
 
 Leave the Destination as default and click Install
 
-![](images/install4.png)
+![](images/install4.PNG)
 
 Click Finish to complete the installation
 
-![](images/install5.png)
+![](images/install5.PNG)
 
 You can find the uploader by searching for IRIDA in the windows search bar
 
 In some cases, the uploader will have trouble opening, so here is an alternative way to launch it.
 
-![](images/install6.png)
+![](images/install6.PNG)
 
 Search and open the applicaiton called `Command Prompt`
 
-![](images/install7.png)
+![](images/install7.PNG)
 
 You will see a command line prompt.
 
@@ -86,11 +86,11 @@ Type in `iridauploadergui` and press `Enter` to launch the application
 
 #### Configure your Uploader
 
-![](images/config1.png)
+![](images/config1.PNG)
 
 Now that the uploader is open, click the `Configure Settings` button to open the config screen.
 
-![](images/config2.png)
+![](images/config2.PNG)
 
 Fill these fields with the provided credentials.
 
