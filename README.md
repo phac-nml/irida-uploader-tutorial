@@ -10,7 +10,7 @@
 
 [Incorrectly formatted Sample Sheet](#incorrectly-formatted-sample-sheet)
 
-[Mising or incorrectly named sample files](#missing-or-incorrectly-named-sample-files)
+[Missing or incorrectly named sample files](#missing-or-incorrectly-named-sample-files)
 
 [Partially uploaded run](#partially-uploaded-run)
 
