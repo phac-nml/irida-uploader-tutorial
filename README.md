@@ -20,7 +20,11 @@
 
 #### Sign into IRIDA
 
-TODO: figure out credentials
+For this tutorial, you will be provided credentials to sign into a test IRIDA platform.
+
+Open Google Chrome and go to the provided URL to access IRIDA.
+
+Use the IRIDA Username and Password given to sign in.
 
 #### Create a new IRIDA project
 
@@ -40,11 +44,55 @@ In our example above, the project number is 9
 
 #### Download and install the IRIDA Uploader
 
-TODO: waiting on 0.3.1 for download instructions
+Go to the releases page for the IRIDA Uploader and download the GUI installer for the latest release.
+
+https://github.com/phac-nml/irida-uploader/releases
+
+![](images/download.png)
+
+Once it's downloaded, launch the .exe file to open the installer.
+
+![](images/install1.png)
+
+Click Next to continue.
+
+![](images/install2.png)
+
+Select Install just for me and click Next
+
+![](images/install3.png)
+
+Leave the Destination as default and click Install
+
+![](images/install4.png)
+
+Click Finish to complete the installation
+
+![](images/install5.png)
+
+You can find the uploader by searching for IRIDA in the windows search bar
+
+In some cases, the uploader will have trouble opening, so here is an alternative way to launch it.
+
+![](images/install6.png)
+
+Search and open the applicaiton called `Command Prompt`
+
+![](images/install7.png)
+
+You will see a command line prompt.
+
+Type in `iridauploadergui` and press `Enter` to launch the application
 
 #### Configure your Uploader
 
-TODO: figure out credentials for this
+![](images/config1.png)
+
+Now that the uploader is open, click the `Configure Settings` button to open the config screen.
+
+![](images/config2.png)
+
+Fill these fields with the provided credentials.
 
 #### Download data set
 
