@@ -30,15 +30,15 @@ Use the IRIDA Username and Password given to sign in.
 
 Now that you are logged in, create a new project by selecting `Projects` > `Create New Project`.
 
-![](images/tutorial_create_new_project_button.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_create_new_project_button.png" width="500">
 
 Give your Project a name, and then select `Create Project`.
 
-![](images/tutorial_create_new_project_screen.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_create_new_project_screen.png" width="500">
 
 Make note of what your project number is, as it will be used later on when uploading your data.
 
-![](images/tutorial_created_project.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_created_project.png" width="500">
 
 In our example above, the project number is 9
 
@@ -48,39 +48,39 @@ Go to the releases page for the IRIDA Uploader and download the GUI installer fo
 
 https://github.com/phac-nml/irida-uploader/releases
 
-![](images/download.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/download.png" width="500">
 
 Look for the the `Latest release` tag to ensure you are getting the newest version.
 
 Once it's downloaded, launch the .exe file to open the installer.
 
-![](images/install1.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/install1.PNG" width="500">
 
 Click Next to continue.
 
-![](images/install2.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/install2.PNG" width="500">
 
 Select Install just for me and click Next
 
-![](images/install3.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/install3.PNG" width="500">
 
 Leave the Destination as default and click Install
 
-![](images/install4.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/install4.PNG" width="500">
 
 Click Finish to complete the installation
 
-![](images/install5.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/install5.PNG" width="500">
 
 You can find the uploader by searching for IRIDA in the windows search bar
 
 In some cases, the uploader will have trouble opening, so here is an alternative way to launch it.
 
-![](images/install6.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/install6.PNG" width="500">
 
 Search and open the applicaiton called `Command Prompt`
 
-![](images/install7.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/install7.PNG" width="500">
 
 You will see a command line prompt.
 
@@ -88,11 +88,11 @@ Type in `iridauploadergui` and press `Enter` to launch the application
 
 #### Configure your Uploader
 
-![](images/config1.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/config1.PNG" width="500">
 
 Now that the uploader is open, click the `Configure Settings` button to open the config screen.
 
-![](images/config2.PNG)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/config2.PNG" width="500">
 
 Fill these fields with the provided credentials.
 
@@ -100,7 +100,7 @@ Fill these fields with the provided credentials.
 
 On this tutorial page, Click the `Clone or download` button and select `Download ZIP` to download the dataset.
 
-![](images/tutorial_download_data.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_download_data.png" width="500">
 
 Unzip the data and locate the folder called `example_miseq_data`, this is sequencing run we are going to upload.
 
@@ -108,35 +108,35 @@ Unzip the data and locate the folder called `example_miseq_data`, this is sequen
 
 In the `example_miseq_data` directory, locate the file named `SampleSheet.csv`. This file is responsible for listing the sample files and what project they are going to be uploaded to.
 
-![](images/tutorial_no_sample_project.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_no_sample_project.png" width="500">
 
 Open the Sample Sheet file and find the empty `Sample_Project` column under the `[Data]` header. Edit this column such that every sample has the project number for the IRIDA project we created earlier.
 
-![](images/tutorial_with_sample_project.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_with_sample_project.png" width="500">
 
 In this case, our project number was 9. After editing the file make sure to save.
 
 Make sure you keep the CSV file format if edit the file with Microsoft Excel or other spreadsheet software.
 
-![](images/save_as_csv.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/save_as_csv.png" width="500">
 
 #### Upload data
 
 Return to the IRIDA Uploader program, and select the `Open Run Directory` button.
 
-![](images/tutorial_select_open.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_select_open.png" width="500">
 
 Find and select the `example_miseq_data` directory again, and click `Open` while the directory is selected.
 
-![](images/tutorial_select_run.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_select_run.png" width="500">
 
 The uploader should now look like this. You can now click upload to start uploading.
 
-![](images/tutorial_run_loaded.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_run_loaded.png" width="500">
 
 Congratulations! You have successfully uploaded the sequencing run. You can also click the `Show Log` button for more information about your upload.
 
-![](images/tutorial_run_uploaded.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_run_uploaded.png" width="500">
 
 Now that the run has been uploaded, two new files have been created in your sequencing run directory.
 
@@ -155,7 +155,7 @@ It contains the following fields:
 
 Refresh the page for your IRIDA project and see that your data now exists.
 
-![](images/tutorial_project_with_samples.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/tutorial_project_with_samples.png" width="500">
 
 ## Uploading non-Illumina data
 
@@ -200,16 +200,16 @@ my-sample-3,76,germ_f.fastq.gz,germ_r.fastq.gz
 
 Make sure you keep the CSV file format if edit the file with Microsoft Excel or other spreadsheet software.
 
-![](images/save_as_csv.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/save_as_csv.png" width="500">
 
 #### Set IRIDA Uploader to Directory Parser
 In the configuration screen of the IRIDA Uploader, change the parser field to `directory`
 
-![](images/set_to_directory.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/set_to_directory.png" width="500">
 
 Now when opening the directory with your SampleList.csv file and data, you data will be shown in the Uploader.
 
-![](images/directory_run.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/directory_run.png" width="500">
 
 #### More...
 You can see more indepth information on uploading your own data in the Documention: https://irida-uploader.readthedocs.io/en/stable/parsers/directory.html
@@ -222,17 +222,17 @@ The sequencing run we are using for this tutorial is also included in this githu
 
 If you try to open a directory with a broken sample sheet file, the uploader will show you an error like this
 
-![](images/broken_sample_sheet.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/broken_sample_sheet.png" width="500">
 
 From reading the error message, we can see that the `[Data]` header that we expected is not there. Lets open the Sample Sheet file to take a closer look.
 
-![](images/broken_sample_sheet_file.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/broken_sample_sheet_file.png" width="500">
 
 It looks like `[Data]` somehow got changed to `[Dataa]`, lets change it back, save the file, and click refresh in the uploader.
 
-![](images/broken_sample_sheet_refresh_button.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/broken_sample_sheet_refresh_button.png" width="500">
 
-![](images/broken_sample_sheet_fixed_sample_sheet.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/broken_sample_sheet_fixed_sample_sheet.png" width="500">
 
 Now everything looks good to go.
 
@@ -240,25 +240,25 @@ Now everything looks good to go.
 
 If a sample file gets renamed, or the sample sheet is edited, the sample sheet may throw an error.
 
-![](images/wrong_sample_name.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/wrong_sample_name.png" width="500">
 
 Let's take a look at the sample sheet and file directory
 
 The sample sheet file is called `SampleSheet.csv` for our Miseq run:
 
-![](images/wrong_sample_name_sample_sheet.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/wrong_sample_name_sample_sheet.png" width="500">
 
 The Miseq data is found in the `Data\Intensities\Basecalls` directory:
 
-![](images/wrong_sample_name_data_dir.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/wrong_sample_name_data_dir.png" width="500">
 
 It looks like our second sample `sample2_S1_L001_R1_001.fastq.gz` accidentally got renamed to `saample2` in our `SampleSheet.csv` file.
 
 Lets change it to `sample2`, save the file, and click the refresh button in the IRIDA Uploader
 
-![](images/wrong_sample_name_refresh_button.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/wrong_sample_name_refresh_button.png" width="500">
 
-![](images/wrong_sample_name_fixed_sample_sheet.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/wrong_sample_name_fixed_sample_sheet.png" width="500">
 
 Now everything looks good to go.
 
@@ -313,15 +313,15 @@ We can see here that the sample named 01-1111 finished uploading, and the sample
 
 Lets confirm this by taking a look at our samples on IRIDA.
 
-![](images/partial_all_samples.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/partial_all_samples.png" width="500">
 
 Here we can see all 3 of our samples are on our project, but we need to look at them to see if the data is there.
 
-![](images/partial_1.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/partial_1.png" width="500">
 
-![](images/partial_2.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/partial_2.png" width="500">
 
-![](images/partial_3.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/partial_3.png" width="500">
 
 By looking at these we can see that only sample 01-1111 has the data uploaded to it.
 
@@ -386,7 +386,7 @@ Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,I5_Index_ID,ind
 
 Open the sample directory in the IRIDA Uploader again, and you will be greated with a warning that the run was partially uploaded, this is what we expected, so hit continue.
 
-![](images/partial_warning.png)
+<img src="https://raw.githubusercontent.com/phac-nml/irida-uploader-tutorial/master/images/partial_warning.png" width="500">
 
 You can now upload the rest of your data.
 
