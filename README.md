@@ -50,6 +50,8 @@ https://github.com/phac-nml/irida-uploader/releases
 
 ![](images/download.png)
 
+Look for the the `Latest release` tag to ensure you are getting the newest version.
+
 Once it's downloaded, launch the .exe file to open the installer.
 
 ![](images/install1.PNG)
