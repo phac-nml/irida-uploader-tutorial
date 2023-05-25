@@ -4,7 +4,7 @@ Before diving into specific errors, please briefly familiarize yourself with our
 
 https://github.com/phac-nml/irida-uploader-tutorial/blob/master/README.md
 
-And out READ-THE-DOCS page. Specifically the pages on [Configuration](https://irida-uploader.readthedocs.io/en/stable/configuration.html), [Errors](https://irida-uploader.readthedocs.io/en/stable/errors.html), and [Parsers](https://irida-uploader.readthedocs.io/en/stable/parsers/miseq_v31.html)
+As well as our READ-THE-DOCS page. Specifically the pages on [Configuration](https://irida-uploader.readthedocs.io/en/stable/configuration.html), [Errors](https://irida-uploader.readthedocs.io/en/stable/errors.html), and [Parsers](https://irida-uploader.readthedocs.io/en/stable/parsers/miseq_v31.html)
 
 https://irida-uploader.readthedocs.io/en/stable/index.html
 
