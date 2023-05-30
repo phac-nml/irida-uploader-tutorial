@@ -157,4 +157,4 @@ Make sure to be extra careful when removing data so that you do not delete the w
 
 If only a few files need removal, an IRIDA Project Manager can delete them.
 
-If all files from a Sequencing Run that when to a specific project need to be removed, but the entire run doesn't, use [TODO: Tool in development] to quickly delete the files.
+If a large number of files need to be removed, the entire sequencing run should be removed, the run directory / sample sheet corrected and re-uploaded
