@@ -1,5 +1,9 @@
 # IRIDA Uploader Tutorial
 
+This document is for learning how to use the IRIDA Uploader
+
+For the error diagnosis document [Click Here](error_diagnosis.md)
+
 ## Table of Contents
 
 [Uploading Data to a Project](#uploading-data-to-a-project)
